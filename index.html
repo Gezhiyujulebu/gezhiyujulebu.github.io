@@ -34,6 +34,7 @@
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(200, 170, 80, 0.08);
         }
 
+        /* ===== 顶部：Logo图片 + 品牌名 ===== */
         .header {
             display: flex;
             align-items: center;
@@ -46,16 +47,11 @@
         .logo-img {
             width: 52px;
             height: 52px;
-            background: #1a1a1a;
             border-radius: 12px;
             border: 1px solid rgba(200, 170, 80, 0.25);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
+            object-fit: cover;
+            background: #1a1a1a;
             flex-shrink: 0;
-            color: #d4af37;
-            font-weight: 700;
         }
 
         .brand {
@@ -316,7 +312,6 @@
             .logo-img {
                 width: 42px;
                 height: 42px;
-                font-size: 22px;
             }
             .brand {
                 font-size: 22px;
@@ -363,7 +358,6 @@
             .logo-img {
                 width: 36px;
                 height: 36px;
-                font-size: 18px;
             }
             .price-card .badge-price {
                 font-size: 17px;
@@ -376,9 +370,9 @@
 
     <div class="container">
 
-        <!-- ===== 顶部：Logo + 品牌名 ===== -->
+        <!-- ===== 顶部：Logo图片 + 品牌名 ===== -->
         <div class="header">
-            <div class="logo-img">🕊️</div>
+            <img src="Logo.png" alt="鸽之羽电竞Logo" class="logo-img">
             <div>
                 <span class="brand">鸽之羽电竞</span>
                 <span class="brand-sub">GEZHIYU</span>
@@ -433,7 +427,7 @@
             📋 <strong>赔付承诺</strong>：连续翻车超过 <span class="highlight-red">6 把</span>，<strong>全额退款</strong>（需提供完整对局截图）
         </div>
 
-        <!-- ===== 收款方式 + 客服微信 + 运营时间 ===== -->
+        <!-- ===== 收款方式 ===== -->
         <div class="payment-section">
             <div class="label">💳 收款方式</div>
             <div class="pay-method">
@@ -446,7 +440,7 @@
             </div>
         </div>
 
-        <!-- ===== QQ群（纯展示，无链接） ===== -->
+        <!-- ===== QQ群 ===== -->
         <div class="recruit-box">
             <div class="qq-number">🐧 1097294502</div>
             <div class="sub-text">📢 招募暗区突围打手 · 稳定单量 · 诚信合作</div>
