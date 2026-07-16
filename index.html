@@ -34,7 +34,7 @@
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(200, 170, 80, 0.08);
         }
 
-        /* ===== 顶部：Logo图片 + 品牌名 ===== */
+        /* ===== 顶部：Logo + 品牌名 ===== */
         .header {
             display: flex;
             align-items: center;
@@ -45,13 +45,23 @@
         }
 
         .logo-img {
-            width: 52px;
-            height: 52px;
-            border-radius: 12px;
+            width: 38px;
+            height: 38px;
+            max-width: 38px;
+            max-height: 38px;
+            border-radius: 8px;
             border: 1px solid rgba(200, 170, 80, 0.25);
-            object-fit: cover;
+            object-fit: contain;
             background: #1a1a1a;
             flex-shrink: 0;
+            display: block;
+        }
+
+        .brand-wrap {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            flex-wrap: wrap;
         }
 
         .brand {
@@ -68,7 +78,6 @@
             font-size: 12px;
             color: #666;
             letter-spacing: 3px;
-            margin-left: 6px;
             font-weight: 300;
             -webkit-text-fill-color: #666;
         }
@@ -310,8 +319,10 @@
                 padding-bottom: 14px;
             }
             .logo-img {
-                width: 42px;
-                height: 42px;
+                width: 32px;
+                height: 32px;
+                max-width: 32px;
+                max-height: 32px;
             }
             .brand {
                 font-size: 22px;
@@ -356,8 +367,10 @@
                 font-size: 18px;
             }
             .logo-img {
-                width: 36px;
-                height: 36px;
+                width: 28px;
+                height: 28px;
+                max-width: 28px;
+                max-height: 28px;
             }
             .price-card .badge-price {
                 font-size: 17px;
@@ -370,10 +383,10 @@
 
     <div class="container">
 
-        <!-- ===== 顶部：Logo图片 + 品牌名 ===== -->
+        <!-- ===== 顶部：Logo + 品牌名 ===== -->
         <div class="header">
-            <img src="Logo.png" alt="鸽之羽电竞Logo" class="logo-png">
-            <div>
+            <img src="Logo.png" alt="鸽之羽电竞Logo" class="logo-img">
+            <div class="brand-wrap">
                 <span class="brand">鸽之羽电竞</span>
                 <span class="brand-sub">GEZHIYU</span>
             </div>
